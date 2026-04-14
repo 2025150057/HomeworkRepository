@@ -1,0 +1,65 @@
+body {
+    animation: background-rainbow 50s linear 0.1s infinite forwards;
+    text-align: center;
+}
+@keyframes background-rainbow
+{
+    0% {background-color: hsla(0, 100%, 50%, 0.5);}
+    16% {background-color: hsla(60, 100%, 50%, 0.5);}
+    33% {background-color: hsla(120, 100%, 50%, 0.5);}
+    50% {background-color: hsla(180, 100%, 50%, 0.5);}
+    67% {background-color: hsla(240, 100%, 50%, 0.5);}
+    83% {background-color: hsla(300, 100%, 50%, 0.5);}
+    100% {background-color: hsla(360, 100%, 50%, 0.5);}
+    
+
+}
+div.main {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: main-rainbow 15s ease-in-out 0.1s infinite alternate;
+    width: 75%;
+    height: 30em;
+    text-align: center;
+    background-color: white;
+}
+
+@keyframes main-rainbow {
+    0% {background-color: hsla(0, 100%, 50%, 0.5);
+    padding: 10px;
+    }
+    16% {background-color: hsla(60, 100%, 50%, 0.5);}
+    33% {background-color: hsla(120, 100%, 50%, 0.5);}
+    50% {background-color: hsla(180, 100%, 50%, 0.5);}
+    67% {background-color: hsla(240, 100%, 50%, 0.5);}
+    83% {background-color: hsla(300, 100%, 50%, 0.5);}
+    100% {background-color: hsla(360, 100%, 50%, 0.5);
+    margin-left: 150px;}
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+button {
+    font-size: 20px;
+}
+#signup {
+    background-color: greenyellow;
+    color:midnightblue;
+}
+#cancel {
+    background-color: tomato;
+    color: bisque;
+}
+#login {
+    background-color: greenyellow;
+    color:midnightblue;
+}
+#login-main
+{
+    height: auto;
+}

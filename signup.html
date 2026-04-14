@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1> Welecome to my movie site! </h1>
+        <a href="login.html">로그인</a>
+        <a href="#">회원가입</a>
+        <div class="content-box">
+            <form action="https://www.example.com" method="post">
+                <p>
+                    <label id="name">
+                        이름:
+                        <input name="name" type="text" placeholder="예)홍길동" autofocus>
+                        (공백 제외 2~4글자)
+                    </label>
+                </p>
+                <p>
+                    <label id="birthday">
+                        생년월일:
+                        <input name="birthday" type="date">
+                        (yyyy-mm-dd)
+                    </label>
+                </p>
+                <p>
+                    <label id="gender">
+                        성별:
+                        <label>
+                            <input type="radio" name="gender" value="남성">
+                            남성
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="여성">
+                            여성
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="기타/비공개" checked>
+                            기타/비공개
+                        </label>
+                    </label>
+                </p>
+                <p>
+                    <label id="grade">
+                        학년
+                        <input type="number" name="grade" step="1">
+                    </label>
+                </p>
+                <p>
+                    <label id="id">
+                        아이디:
+                        <input type="text" name="id" size="20" placeholder="ex)asdf1234" required>
+                    </label>
+                </p>
+                <p>
+                    <label id="password">
+                        비밀번호:
+                        <input type="password" name="password" placeholder="ex)q1w2e3r4!@" required
+                            autocomplete="new-password">
+                    </label>
+                </p>
+                <p>
+                    <label id="security-question">
+                        보안 질문
+                        <select name="security-question">
+                            <option selected>질문을 선택하세요</option>
+                            <option>고향</option>
+                            <option>좋아하는 동물</option>
+                            <option>가족의 이름</option>
+                            <option>좌우명</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label id="security-answer">
+                        답변:
+                        <input type="text" name="security-answer" size="20">
+                    </label>
+                </p>
+        </div>
+        <button type="submit" id="signup">Signup</button>
+        <button type="submit" id="cancel">Cancel</button>
+        </form>
+    </div>
+</body>
+
+</html>
