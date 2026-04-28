@@ -28,38 +28,64 @@ div.main {
 }
 
 @keyframes main-rainbow {
-    0% {background-color: hsla(0, 100%, 50%, 0.5);
-    padding: 10px;
-    }
+    0% {background-color: hsla(0, 100%, 50%, 0.5);}
     16% {background-color: hsla(60, 100%, 50%, 0.5);}
     33% {background-color: hsla(120, 100%, 50%, 0.5);}
     50% {background-color: hsla(180, 100%, 50%, 0.5);}
     67% {background-color: hsla(240, 100%, 50%, 0.5);}
     83% {background-color: hsla(300, 100%, 50%, 0.5);}
-    100% {background-color: hsla(360, 100%, 50%, 0.5);
-    margin-left: 150px;}
+    100% {background-color: hsla(360, 100%, 50%, 0.5);}
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
-button {
+input[type="submit"] {
     font-size: 20px;
-}
-#signup {
     background-color: greenyellow;
     color:midnightblue;
 }
-#cancel {
+input[type="reset"]
+{
+    font-size: 20px;
     background-color: tomato;
     color: bisque;
-}
-#login {
-    background-color: greenyellow;
-    color:midnightblue;
 }
 #login-main
 {
     height: auto;
 }
+
+header {
+    width: 1020px;
+}
+
+nav {
+    display: flex;
+}
+
+div#header {
+    animation-name: header-sliding;
+    animation-duration: 4s;
+}
+
+@keyframes header-sliding {
+    0% {
+        margin-left:1020px;
+    }
+    100%
+    {
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 480px)
+{
+    
+}
+
+
+
+
