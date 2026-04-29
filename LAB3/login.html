@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>Log in</title>
+</head>
+
+<header>
+    <div id="header">
+        <h1>인프밍 영화 정보 사이트</h1>
+    </div>
+    <nav>
+        <div class="nav">
+            <div class="flex-nav">
+                <a href="#">메인페이지</a>
+            </div>
+            <div class="flex-nav">
+                <a href="login.html">로그인</a>
+            </div>
+            <div class="flex-nav">
+                <a href="signup.html">회원가입</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="main" id="login-main">
+        <h1> Welecome to my movie site! </h1>
+        <a href="#">로그인</a>
+        <a href="signup.html">회원가입</a>
+        <div class="content-box">
+            <form action="https://www.example.com" method="post">
+                <p>
+                    <label id="id">
+                        아이디:
+                        <input type="text" name="id" size="20" placeholder="ex)asdf1234" required>
+                    </label>
+                </p>
+                <p>
+                    <label id="password">
+                        비밀번호:
+                        <input type="password" name="password" placeholder="ex)q1w2e3r4!@" required
+                            autocomplete="current-password">
+                    </label>
+                </p>
+                <input type="submit" id="login" value="Login"></input>
+                <input type="reset" id="cancel" value="Cancel"></input>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
