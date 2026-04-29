@@ -78,6 +78,10 @@ nav a {
     font-size: 1.2em;;
     margin: 1em 1em;
 }
+nav a:hover{
+    border-top: 2px solid red;
+    border-bottom:2px solid red;
+}
 
 div#header {
     animation-name: header-sliding;
@@ -106,12 +110,6 @@ img:hover
     width: 10em;
 }
 
-
-
-@media (max-width: 480px)
-{
-
-}
 
 section {
     columns: 2;
